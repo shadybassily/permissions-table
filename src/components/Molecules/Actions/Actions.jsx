@@ -7,7 +7,11 @@ export default function Actions({ actionsList }) {
   return (
     <Stack direction="row" justifyContent={"center"}>
       {actionsList.map((action, i) => (
-        <Button key={i} onClick={action.click} sx={{ p: 0, color: "#F25500" }}>
+        <Button
+          key={i}
+          onClick={action.click}
+          sx={{ p: 0, color: "#F25500", width: 0 }}
+        >
           {action.text === "Edit" && <EditOutlinedIcon />}
           {action.text === "Delete" && <DeleteOutlineOutlinedIcon />}
         </Button>
