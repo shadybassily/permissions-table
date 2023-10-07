@@ -21,7 +21,8 @@ export const theme = createTheme({
             '&:hover': {
               //  backgroundColor: 'primary',
             },
-            padding: "8px 97px",
+            padding: "8px 0px",
+            width:"220px",
             fontFamily: "Jost",
             textTransform: "capitalize",
             fontSize:'18px',
