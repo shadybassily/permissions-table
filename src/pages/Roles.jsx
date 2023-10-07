@@ -57,7 +57,7 @@ export default function RolesPage() {
 
   const handleSubmit = (data) => {
     const action = () => {
-      navigate("/roles-permissions");
+      navigate("/roles-permissions/");
     };
     if (id) {
       dispatch(UpdateRole(data));

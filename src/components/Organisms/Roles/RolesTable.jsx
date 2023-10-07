@@ -6,6 +6,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Header from "@/components/Atoms/Header/Header";
+import { Stack, Typography } from "@mui/material";
 
 export default function RolesTable({ tableData, headerTitle }) {
   return (
@@ -46,7 +47,16 @@ export default function RolesTable({ tableData, headerTitle }) {
           </Table>
         </TableContainer>
       ) : (
-        <>no data</>
+        <Typography
+          sx={{
+            fontFamily: "Jost",
+            fontSize: "30px",
+            color: "#bdc3c7",
+            textAlign: "center",
+          }}
+        >
+          No data, try adding a new role
+        </Typography>
       )}
     </>
   );

@@ -45,7 +45,7 @@ export default function Header({ headerTitle }) {
 
   return (
     <Stack
-      direction="row"
+      direction={{ sm: "column", md: "row" }}
       alignItems="center"
       justifyContent="space-between"
       sx={{ py: 5 }}
