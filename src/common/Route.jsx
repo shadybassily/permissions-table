@@ -5,11 +5,9 @@ import Layout from "./Layout";
 const AppRoute = () => {
   return (
     <Routes>
-      <Route path="/roles" element={<Layout />}>
+      <Route path="/roles-permissions/roles" element={<Layout />}>
         <Route index element={<RolesPage />} />
       </Route>
-      
-      <Route path="/" element={<Navigate to="/roles" />} />
     </Routes>
   );
 };
